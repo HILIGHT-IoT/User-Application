@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A385C"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_weight="0.8"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        >
+
+        <TextView
+
+            android:id="@+id/chart_fragment_textView_temperature"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="23.7℃"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        >
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/PieChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2A385C" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_margin="18dp"
+            android:id="@+id/chart_fragment_imageView_gas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/empty_gas" />
+
+        <ImageView
+            android:layout_margin="18dp"
+            android:id="@+id/chart_fragment_imageView_fire"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/empty_flame" />
+
+        <ImageView
+            android:id="@+id/chart_fragment_imageView_viberate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="18dp"
+            android:src="@drawable/empty_vibration" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        >
+    </LinearLayout>
+
+
+
+</LinearLayout>
